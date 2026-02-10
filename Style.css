@@ -1,0 +1,431 @@
+/* Reset & Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #002d60;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tombol Umum */
+.btn {
+  display: inline-block;
+  background-color: #f4b942;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d99d38;
+}
+
+/* =================== HEADER =================== */
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Navigasi */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Kiri */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Membuat logo bulat */
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+/* Link Navigasi */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Diganti dari 20pc agar lebih sesuai */
+}
+
+.nav-links li a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* =================== HERO SECTION =================== */
+.hero-section {
+  background-image: url("https://via.placeholder.com/1920x800/EEE/222?text=CV.+Talafu+Nisa");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* =================== SECTION UMUM =================== */
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 3px;
+  background-color: #001150;
+}
+
+/* =================== ABOUT SECTION =================== */
+.about-section {
+  background-color: #002d60;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* =================== PRODUCTS / PROJECTS SECTION =================== */
+.products-section {
+  background-color: #002d60;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.95em;
+  color: #666;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.product-card .price {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #000;
+}
+
+/* =================== CONTACT SECTION =================== */
+.contact-section {
+  background-color: #002d60;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #f4b942;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media Sosial */
+.social-media {
+  margin: 30px 0;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #f4b942;
+}
+
+/* WhatsApp */
+.whatsapp-chat {
+  margin-top: 30px;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+
+/* Lokasi Map */
+.location-map {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.location-map h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.location-map iframe {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #047ae2;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* tombol petunjuk arah */
+.map-btn {
+  background-color: #f4b942;
+  color: #fff;
+}
+
+.map-btn:hover {
+  background-color: #d99d38;
+}
+
+/* =================== FOOTER =================== */
+.footer {
+  background-color: #f9f9f9;
+  color: #000000;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9em;
+}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location-map iframe {
+    height: 300px;
+  }
+}
+/* ======== STYLE HAMBURGER MENU ======== */
+/* Sembunyikan tombol hamburger di desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20;
+}
+
+/* Styling garis-garis hamburger */
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* MEDIA QUERY untuk layar kecil (mobile/tablet) */
+@media (max-width: 768px) {
+  /* Tampilkan tombol hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Sembunyikan menu navigasi pada mobile awalnya */
+  .nav-links {
+    position: right;
+    top: 70px; /* tinggi navbar */
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+    z-index: 10;
+  }
+
+  /* Saat menu aktif/tampil */
+  .nav-links.nav-active {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  /* Styling link saat dropdown */
+  .nav-links li a {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: none;
+  }
+}
