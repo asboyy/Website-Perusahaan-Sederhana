@@ -1,44 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV. Talafu Nisa - Konstruksi Berkualitas Tinggi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CV. Talafu Nisa adalah perusahaan konstruksi profesional di Medan dengan layanan pembangunan, renovasi, dan infrastruktur berkualitas tinggi."
+    />
+    <meta name="theme-color" content="#002d60" />
+    <meta property="og:title" content="CV. Talafu Nisa | Konstruksi Berkualitas" />
+    <meta
+      property="og:description"
+      content="Mitra konstruksi terpercaya untuk proyek hunian, komersial, dan infrastruktur."
+    />
+    <meta property="og:type" content="website" />
+    <title>CV. Talafu Nisa | Konstruksi Berkualitas Tinggi</title>
 
-    <!-- CSS Utama -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- ======= HEADER/NAVBAR ======= -->
-    <header class="header">
-      <nav class="navbar">
-        <!-- Logo bulat + Nama perusahaan -->
-        <div class="logo">
-          <img src="logo.png" class="title" alt="Logo CV Talafu Nisa" />
-          <span>CV TALAFU NISA</span>
-        </div>
+    <header class="header" id="top">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a href="#top" class="brand" aria-label="Beranda CV Talafu Nisa">
+          <img src="logo.png" alt="Logo CV Talafu Nisa" />
+          <span>CV. TALAFU NISA</span>
+        </a>
 
-        <!-- Tombol Hamburger untuk Mobile -->
         <button
           class="hamburger"
-          aria-label="Toggle navigation Menu"
+          aria-label="Buka menu navigasi"
           aria-expanded="false"
+          aria-controls="main-menu"
+          type="button"
         >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        <!-- Navigasi -->
-        <ul class="nav-links">
+        <ul class="nav-links" id="main-menu">
           <li><a href="#about">Tentang</a></li>
           <li><a href="#projects">Proyek</a></li>
           <li><a href="#contact">Kontak</a></li>
@@ -46,150 +53,180 @@
       </nav>
     </header>
 
-    <!-- ======= HERO SECTION ======= -->
     <main>
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>Mitra Terpercaya Proyek Konstruksi Anda</h1>
-          <p>Layanan konstruksi profesional dengan standar kualitas tinggi.</p>
-          <a href="#projects" class="btn">Lihat Proyek</a>
+      <section class="hero" aria-label="Hero CV Talafu Nisa">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="eyebrow reveal-on-scroll">Konstruksi Presisi, Hasil Bergengsi</p>
+          <h1 class="split-text">Mitra Konstruksi Andal untuk Proyek Bernilai Tinggi</h1>
+          <p class="hero-subtext reveal-on-scroll">
+            Kami membangun struktur yang kokoh, estetis, dan tepat waktu untuk hunian,
+            komersial, hingga infrastruktur strategis.
+          </p>
+          <a href="#projects" class="btn reveal-on-scroll">Jelajahi Proyek Kami</a>
         </div>
       </section>
 
-      <!-- ======= ABOUT SECTION ======= -->
-      <section id="about" class="about-section">
+      <section id="about" class="section about">
         <div class="container">
-          <h2>Tentang Kami</h2>
-          <p>
-            CV. Talafu Nisa dikenal memiliki reputasi yang baik dalam memberikan
-            layanan konstruksi berkualitas tinggi. Komitmen terhadap
-            profesionalisme dan standar kualitas yang tinggi telah menjadikan
-            kami mitra terpercaya dalam berbagai proyek pembangunan.
+          <h2 class="section-title reveal-on-scroll">Tentang CV. Talafu Nisa</h2>
+          <p class="section-text reveal-on-scroll">
+            CV. Talafu Nisa berfokus pada pembangunan dan renovasi dengan standar mutu
+            tinggi, manajemen kerja profesional, serta eksekusi presisi di setiap detail.
           </p>
-          <p>
-            Kami hadir dengan solusi konstruksi yang inovatif, efisien, dan
-            berkelanjutan untuk berbagai kebutuhan klien kami.
+          <p class="section-text reveal-on-scroll">
+            Pendekatan kami mengutamakan kualitas struktur, keamanan, efisiensi biaya,
+            dan ketepatan jadwal untuk menciptakan hasil konstruksi yang tahan lama.
           </p>
         </div>
       </section>
 
-      <!-- ======= PROJECTS SECTION ======= -->
-      <section id="projects" class="products-section">
+      <section id="projects" class="section projects">
         <div class="container">
-          <h2>Proyek Kami</h2>
-          <div class="product-grid">
-            <!-- Proyek 1 -->
-            <div class="product-card">
-              <img src="proyek 1.jpeg" alt="Proyek 1" />
-              <h3>Pembangunan Perumahan</h3>
-              <p>Proyek pembangunan kompleks perumahan modern di Medan.</p>
-              <span class="price">Selesai 2023</span>
-            </div>
+          <h2 class="section-title reveal-on-scroll">Portofolio Proyek</h2>
+          <p class="section-text reveal-on-scroll">
+            Rekam jejak proyek konstruksi dan renovasi yang telah kami selesaikan.
+          </p>
 
-            <!-- Proyek 2 -->
-            <div class="product-card">
-              <img src="proyek 1.jpeg" alt="Proyek 2" />
-              <h3>Renovasi Gedung Perkantoran</h3>
-              <p>Transformasi gedung lama menjadi kantor modern dan efisien.</p>
-              <span class="price">Selesai 2022</span>
-            </div>
+          <div class="projects-grid">
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pembangunan Perumahan Elite" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pembangunan Perumahan Elite</h3>
+                <p>Kompleks hunian modern di Medan.</p>
+                <span class="project-tag">Selesai 2023</span>
+              </div>
+            </article>
 
-            <!-- Proyek 3 -->
-            <div class="product-card">
-              <img src="proyek 1.jpeg" alt="Proyek 3" />
-              <h3>Konstruksi Gudang Industri</h3>
-              <p>
-                Gudang penyimpanan bahan industri skala besar dan tahan lama.
-              </p>
-              <span class="price">Selesai 2021</span>
-            </div>
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Renovasi Gedung Perkantoran" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Renovasi Gedung Perkantoran</h3>
+                <p>Transformasi gedung kantor 5 lantai.</p>
+                <span class="project-tag">Selesai 2022</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Konstruksi Gudang Logistik" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Konstruksi Gudang Logistik</h3>
+                <p>Fasilitas penyimpanan skala industri.</p>
+                <span class="project-tag">Selesai 2021</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pembangunan Jembatan Beton" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pembangunan Jembatan Beton</h3>
+                <p>Infrastruktur penghubung antar desa.</p>
+                <span class="project-tag">Selesai 2023</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pusat Perbelanjaan Mall" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pusat Perbelanjaan (Mall)</h3>
+                <p>Konstruksi struktur baja untuk area retail.</p>
+                <span class="project-tag">Selesai 2024</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Renovasi Interior Luxury Villa" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Renovasi Interior Luxury Villa</h3>
+                <p>Finishing kelas atas untuk hunian privat.</p>
+                <span class="project-tag">Selesai 2023</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Infrastruktur Jalan Raya" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Infrastruktur Jalan Raya</h3>
+                <p>Pengaspalan dan drainase jalan utama.</p>
+                <span class="project-tag">Selesai 2022</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pembangunan Masjid Agung" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pembangunan Masjid Agung</h3>
+                <p>Konstruksi kubah dan struktur utama.</p>
+                <span class="project-tag">Selesai 2024</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pabrik Pengolahan Sawit" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pabrik Pengolahan Sawit</h3>
+                <p>Instalasi mesin dan struktur pabrik.</p>
+                <span class="project-tag">Selesai 2021</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal-on-scroll">
+              <div class="project-media">
+                <img src="proyek 1.jpeg" alt="Pembangunan Sekolah Internasional" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Pembangunan Sekolah Internasional</h3>
+                <p>Gedung belajar 3 lantai dengan fasilitas olahraga.</p>
+                <span class="project-tag">Selesai 2023</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ======= CONTACT SECTION ======= -->
-      <section id="contact" class="contact-section">
+      <section id="contact" class="section contact">
         <div class="container">
-          <h2>Hubungi Kami</h2>
-          <p>Ingin konsultasi atau penawaran proyek? Hubungi kami sekarang!</p>
-
-          <!-- Info Kontak -->
-          <div class="contact-info">
+          <h2 class="section-title reveal-on-scroll">Hubungi Kami</h2>
+          <p class="section-text reveal-on-scroll">
+            Diskusikan kebutuhan proyek Anda bersama tim kami.
+          </p>
+          <div class="contact-box reveal-on-scroll">
             <p>
               Email:
               <a href="mailto:info@talafunisa.com">info@talafunisa.com</a>
             </p>
             <p>Telepon: <a href="tel:+628123456789">+62 812 3456 789</a></p>
             <p>
-              Alamat: Jl. Jala Permai X Blk. 8 No.78, Besar, Kec. Medan Labuhan,
-              Kota Medan, Sumatera Utara 20251
-            </p>
-          </div>
-
-          <!-- Media Sosial -->
-          <div class="social-media">
-            <a href="https://instagram.com/talafunisa" target="_blank"
-              >Instagram</a
-            >
-            <a href="https://facebook.com/talafunisa" target="_blank"
-              >Facebook</a
-            >
-            <a href="https://www.tiktok.com/@talafunisa" target="_blank"
-              >TikTok</a
-            >
-          </div>
-
-          <!-- WhatsApp -->
-          <div class="whatsapp-chat">
-            <a
-              href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20konsultasi%20proyek%20konstruksi."
-              target="_blank"
-              class="btn whatsapp-btn"
-            >
-              Chat via WhatsApp
-            </a>
-          </div>
-
-          <!-- Lokasi / Peta Embedded -->
-          <div class="location-map">
-            <h3>Temukan Kami di Peta</h3>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63662.53477310948!2d98.74951414706244!3d3.6206592073710797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303133081c06eab1%3A0x28e05ca325659741!2sJl.%20Jala%20Permai%20X%20Block%208%20No.%2078%2C%20Medan%20Labuhan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1700861151467!5m2!1sid!2sid"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Lokasi Perusahaan CV Talafu Nisa"
-            ></iframe>
-            <p>
-              <a
-                href="https://maps.app.goo.gl/1AShXU8z4NYGgr6K6"
-                target="_blank"
-                class="btn map-btn"
-              >
-                Dapatkan Petunjuk Arah
-              </a>
+              Alamat: Jl. Jala Permai X Blk. 8 No. 78, Medan Labuhan, Kota Medan,
+              Sumatera Utara 20251.
             </p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ======= FOOTER ======= -->
     <footer class="footer">
-      <p>&copy; 2024 CV. Talafu Nisa. Hak Cipta Dilindungi.</p>
+      <div class="container">
+        <p>&copy; 2026 CV. Talafu Nisa. Seluruh hak cipta dilindungi.</p>
+      </div>
     </footer>
-
-    <script>
-      // Toggle navbar menu
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        const expanded =
-          hamburger.getAttribute("aria-expanded") === "true" || false;
-        hamburger.setAttribute("aria-expanded", !expanded);
-        navLinks.classList.toggle("nav-active");
-      });
-    </script>
   </body>
 </html>
